@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+    font-family:'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    background-color:#f9f9f9;
+    border:2px red solid;
+}
+.navbar{
+    border:2px blue solid;
+    display:flex;
+}
+.navbar-brand{
+    border: 1px green solid;
+}
+.navbar-collapse{
+    border: 1px purple solid;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.nav-link{
+    border: 1px black dotted;
+}
+/* Portfolio */
+.portfolio{
+    height:526px;
+    display:flex;
+    border: 2px black solid;
+}
+.portfolio .items{
+    border: 2px black solid;
+    margin:16px;
+}
+.portfolio .items img{
+    background-size: cover;
+    width: 380px;
+    height: 90%;
+    cursor: pointer;
+}
+.portfolio .title{
+    margin: 12px 5px;
+    border: 2px black solid;
+}
+.portfolio .title h2 {
+    font-size: 24px;
+}
+/* Footer */
+.footer{
+    margin-top: 6px;
+    border:2px blue solid;
+    display:flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: flex-end;
+    line-height: 0.4em;
+}
+.footer-link a{
+    color: black;
+}
+
+/*  Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+    .portfolio{
+        height:640px;
+    }
+} */
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+    .portfolio{
+        height:810px;
+    }
+} */
