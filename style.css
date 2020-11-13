@@ -71,12 +71,28 @@
     font-size: 16px;
 }
 
-/*  Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
-    .portfolio{
-        height:640px;
-    }
-} */
+.about .banner{
+    background-image: url(images/profile.png);
+    height: 520px;
+    width: 1400px;
+    background-size: contain;
+    background-attachment: fixed;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background-repeat: no-repeat;
+}
+
+.about {
+    text-align: center;
+}
+.about .container{
+    border: 2px red solid;
+
+}
+.about .mission{
+    font-family: cursive;
+    font-style: italic;
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1500px) {
     .portfolio{
@@ -91,5 +107,8 @@
     }
     .footer{
         margin-top: 45px;
+    }
+    .about .banner{
+        width: 1900px;
     }
 }
