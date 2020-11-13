@@ -24,17 +24,19 @@
 }
 /* Portfolio */
 .portfolio{
-    height:526px;
+    max-width:1380px;
+    height:586px;
     display:flex;
     border: 2px black solid;
 }
 .portfolio .items{
     border: 2px black solid;
-    margin:16px;
+    height: 580px;
+    /* margin:16px; */
 }
 .portfolio .items img{
-    background-size: cover;
-    width: 380px;
+    /* background-size: cover; */
+    /* width: 100%; */
     height: 90%;
     cursor: pointer;
 }
