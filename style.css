@@ -95,12 +95,12 @@
 }
 
 .about .banner{
-    background-image: url(images/profile.png);
+    background-image: linear-gradient(rgba(1,0,0,0.1),rgba(0,2,0,0.1)), url(images/profile.png);
     height: 520px;
     max-width: 1280px;
     background-size: contain;
     background-attachment: fixed;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
     background-repeat: no-repeat;
     margin-bottom: 20px;
 }
@@ -128,7 +128,6 @@
 .about .paragraph{
     font-size: 12px;
 }
-
 .about .footer .footer-link {
     visibility: hidden;
 }
