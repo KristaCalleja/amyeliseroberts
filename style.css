@@ -4,14 +4,22 @@
     scroll-behavior: smooth;
 }
 .wrapper {
-    /* border:2px red solid; */
+    border:2px red solid;
     position: relative;
     min-height: 14vh;
 }
 .navbar{
-    /* border:2px blue solid; */
+    border:2px blue solid;
     display:flex;
     top: 0;
+    justify-content: flex-end;
+}
+.navbar-brand{
+    border: 3px brown solid;
+    text-align: end;
+}
+.navbar-brand p{
+    font-weight: 800;
 }
 .navbar-brand a{
     /* border: 1px green solid; */
@@ -27,18 +35,23 @@
     font-size: 32px;
 }
 .navbar-collapse{
-    /* border: 1px purple solid; */
+    border: 2px purple solid;
     justify-content:flex-end;
     cursor:pointer;
+    /* background-color:#f9f9f9; */
 }
 .nav-link{
-    background-color:#f9f9f9;
-    font-weight: 600;
+    font-weight: 700;
     /* border: 1px black dotted; */
+    margin: 4px 2px;
 }
 .nav-item a:hover{
     text-decoration: underline overline;
     opacity: 0.7;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    /* transition-duration: 0.4s; */
+
 }
 /* Portfolio */
 .portfolio{
@@ -96,23 +109,27 @@
 
 .about .banner{
     background-image: linear-gradient(rgba(1,0,0,0.1),rgba(0,2,0,0.1)), url(images/profile.png);
-    height: 520px;
-    max-width: 1280px;
-    background-size: contain;
-    background-attachment: fixed;
+    height: 60vh;
+    max-width: 100%;
+    background-size: cover;
+    /* background-attachment: fixed; */
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     background-repeat: no-repeat;
     margin-bottom: 20px;
+    border: 2px black solid;
 }
 
 .about {
     text-align: center;
+    border: 2px red solid;
 }
 .about .container{
-    /* border: 2px red solid; */
+    border: 2px blue solid;
     width: 520px;
 }
 .about .title{
+    background-image: url(images/bg.jpg);
+    background-size: contain;
     padding-top: 20px;
     font-size: 48px;
     text-decoration: underline overline;
