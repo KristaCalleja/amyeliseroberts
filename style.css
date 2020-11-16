@@ -3,19 +3,17 @@
     font-family:'Noto Sans', sans-serif;
     scroll-behavior: smooth;
 }
-.wrapper {
-    border:2px red solid;
-    position: relative;
-    min-height: 14vh;
+.paragraph{
+    font-size: 12px;
 }
 .navbar{
-    border:2px blue solid;
+    /* border:2px blue solid; */
     display:flex;
     top: 0;
     justify-content: flex-end;
 }
 .navbar-brand{
-    border: 3px brown solid;
+    /* border: 3px brown solid; */
     text-align: end;
 }
 .navbar-brand p{
@@ -35,7 +33,7 @@
     font-size: 32px;
 }
 .navbar-collapse{
-    border: 2px purple solid;
+    /* border: 2px purple solid; */
     justify-content:flex-end;
     cursor:pointer;
     /* background-color:#f9f9f9; */
@@ -50,8 +48,6 @@
     opacity: 0.7;
     background-image: url(images/bg.jpg);
     background-size: cover;
-    /* transition-duration: 0.4s; */
-
 }
 /* Portfolio */
 .portfolio{
@@ -63,6 +59,9 @@
 .portfolio .items{
     margin:0px 20px;
     /* border: 2px red solid; */
+}
+.portfolio .items a{
+    color: black;
 }
 .portfolio .items img{
     height: 380px;
@@ -76,11 +75,6 @@
 .portfolio img:hover + .title h2{
     text-decoration: underline overline;
 }
-.portfolio .title h2{
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    font-size: 24px;
-}
 .portfolio .title{
     padding: 10px 20px;
     cursor: pointer;
@@ -92,8 +86,8 @@
 /* Footer */
 .footer{
     bottom: 0;
-    /* position: absolute; */
-    margin: 10px;
+    position: absolute;
+    margin: 20px;
     /* border:2px blue solid; */
     display:flex;
     justify-content: space-between;
@@ -104,32 +98,29 @@
 }
 .footer-link a{
     color: black;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
-
+/* ABOUT HTML */
 .about .banner{
     background-image: linear-gradient(rgba(1,0,0,0.1),rgba(0,2,0,0.1)), url(images/profile.png);
-    height: 60vh;
+    height: 80vh;
     max-width: 100%;
-    background-size: cover;
-    /* background-attachment: fixed; */
+    background-size: contain;
+    background-attachment: fixed;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     background-repeat: no-repeat;
     margin-bottom: 20px;
-    border: 2px black solid;
+    /* border: 2px black solid; */
 }
-
 .about {
     text-align: center;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 .about .container{
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
     width: 520px;
 }
 .about .title{
-    background-image: url(images/bg.jpg);
-    background-size: contain;
     padding-top: 20px;
     font-size: 48px;
     text-decoration: underline overline;
@@ -142,29 +133,77 @@
     font-size: 24px;
     line-height: 2em;
 }
-.about .paragraph{
-    font-size: 12px;
+.about .footer{
+    position: relative;
 }
 .about .footer .footer-link {
-    visibility: hidden;
+    /* visibility: hidden; */
+}
+/* STORY PAGES */
+.hero-image{
+    height: 650px;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.hero-image .title{
+    padding: 320px 430px;
+    text-decoration: underline overline;
+    font-size: 32px;
+}
+.hero-image .title a{
+    margin-top: 130px;
+    font-size: 40px;
+}
+.hero-image .title a:hover{
+    text-decoration: underline overline;
+}
+.wrapper{
+    display:flex;
+    /* border: 2px red solid; */
+}
+.description-box{
+    /* border: 2px orange solid; */
+    margin: 40px;
+    max-width: 820px;
+    /* width: 60%; */
+}
+.details-box{
+    font-size: 32px;
+    /* border: 2px green solid; */
+    margin: 20px;
+    width: 100%;
+    background-color: #f4f3f2;
+    padding: 60px 40px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.details-box .material {
+    font-family: sans-serif;
+}
+.details-box .material h3{
+    font-size: 16px;
+}
+.story-footer{
+    bottom: 0;
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1500px) {
-    .wrapper{
-        min-height: 10vh;
-    }
-    .portfolio{
+    /* .portfolio{
         height:810px;
-    }
+    } */
     .portfolio .items{
         height:820px;
     }
     .portfolio .items img{
-        height: 90%;
+        height: 80%;
         background-size:contain;
     }
-    
     .about .banner{
         width: 1900px;
+    }
+    .description-box{
+        max-width: 1100px;
     }
 }
