@@ -12,6 +12,7 @@
 nav{
     /* border:2px blue solid; */
     /* background-color: cornsilk; */
+    width: 90%;
     height: 100px;
     top: 0;
 }
@@ -44,21 +45,21 @@ nav a:hover{
 }
 /* Portfolio */
 .portfolio{
-    display:flex;
+    /* display:flex; */
     /* border: 2px black solid; */
-    /* background-color: coral; */
-    padding: 27px;
+    padding: 7px;
 }
-.portfolio .items{
-    margin:0px 20px;
+.items{
+    height: 100%;
+    margin:20px;
     /* border: 2px red solid; */
 }
 .portfolio .items a{
     color: black;
 }
 .portfolio .items img{
-    height: 70vh;
-    background-size: contain;
+    /* height:80%; */
+    /* background-size: cover; */
     cursor: zoom-in;
     box-shadow:0 0 15px rgba(0,0,0,0.2);
 }
@@ -69,7 +70,7 @@ nav a:hover{
     text-decoration: underline overline;
 }
 .portfolio .title{
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     cursor: pointer;
     /* border: 2px black solid; */
 }
@@ -78,59 +79,34 @@ nav a:hover{
 }
 /* Footer */
 .footer{
-    bottom: 0;
-    position: absolute;
-    margin: 20px;
     /* border:2px blue solid; */
-    display:flex;
-    justify-content: space-between;
+    /* background: #f1f1f1; */
+    width: 90%;
+    max-width: 1200px;
+    /* height: 100px; */
+    padding: 70px;
     font-weight: 600;
-}
-.footer-copyright p{
     font-size: 12px;
 }
-.footer-link a{
-    color: black;
-    /* font-size: 16px; */
-}
 /* ABOUT HTML */
-.about .banner{
-    background-image: linear-gradient(rgba(1,0,0,0.1),rgba(0,2,0,0.1)), url(images/profile.png);
-    height: 80vh;
-    max-width: 100%;
-    background-size: contain;
-    background-attachment: fixed;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
-    /* border: 2px black solid; */
+.about{
+    background: #f1f1f1;
+    /* border: 1px green solid; */
 }
-.about {
-    text-align: center;
-    /* border: 2px red solid; */
-}
-.about .container{
-    /* border: 2px blue solid; */
-    width: 520px;
-}
-.about .title{
-    padding-top: 20px;
-    font-size: 48px;
-    text-decoration: underline overline;
-}
-.about .mission{
-    margin: 24px 0;
-    font-family: 'Palatino';
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    padding: 80px;
     font-style: italic;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 24px;
-    line-height: 2em;
 }
-.about .footer{
-    position: relative;
+.box img{
+    width: 100%;
 }
-.about .footer .footer-link {
-    /* visibility: hidden; */
+.about p{
+    /* border: 1px green solid; */
+    margin: 150px;
+    padding: 120px 60px;
 }
 /* STORY PAGES */
 .hero-image{
@@ -181,11 +157,39 @@ nav a:hover{
 .story-footer{
     bottom: 0;
 }
+
+/* Grid */
+.wrapper{
+    max-width: 1200px;
+    /* border: 2px black solid; */
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+    grid-template-columns: 20% 1fr 1fr 1fr 1fr 20%;  
+          /*adjust outer values if you want less padding on the sides, 
+           in jsfiddle I used 5% */
+    grid-template-rows: 10% 250pt 250pt 10%;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+.card{
+    /* border: 3px red solid; */
+    align-content: center;
+    justify-content: flex-start;
+    border: none;
+}
+.card .title{
+    display: none;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1500px) {
-    /* .portfolio{
-        height:810px;
-    } */
+@media (min-width: 1200px) {
     .portfolio .items{
         height:820px;
     }
