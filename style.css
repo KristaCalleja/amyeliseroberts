@@ -159,43 +159,51 @@ nav a:hover{
 }
 
 /* Grid */
-.wrapper{
-    max-width: 1200px;
-    /* border: 2px black solid; */
+.container{
+    width: 95%;
+    margin: 0 auto;
 }
-.card-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 3em;
-    grid-template-columns: 20% 1fr 1fr 1fr 1fr 20%;  
-          /*adjust outer values if you want less padding on the sides, 
-           in jsfiddle I used 5% */
-    grid-template-rows: 10% 250pt 250pt 10%;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
+.grid-item img {
+    width: 100%;
+    /* height: 100%; */
 }
-.card{
-    /* border: 3px red solid; */
-    align-content: center;
-    justify-content: flex-start;
-    border: none;
+.grid {
+    display: flex;
 }
-.card .title{
+.grid-col{
+    flex: 1;
+    padding: 0 .1em;
+}
+.grid-col--2, .grid-col--3 {
     display: none;
 }
-.card img{
-    width: 100%;
-    height: 100%;
-    background-size: contain;
+.title{
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    margin-top: 1em;
+}
+.title h2{
+    margin: .2em .5em;
+    font-size: 1em;
+}
+
+@media(min-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .grid-col--2{
+        display: block;
+    }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .portfolio .items{
-        height:820px;
+        /* height:820px; */
     }
     .portfolio .items img{
-        height: 80%;
-        background-size:contain;
+        /* height: 80%; */
+        /* background-size:contain; */
     }
     .about .banner{
         width: 1900px;
