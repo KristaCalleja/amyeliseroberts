@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Official Artist Website of Amy Elise Roberts</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/grid.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -27,7 +28,13 @@
             </div>
             <img src="images/2 Soldiers=1 human -2007.jpg" alt="">
         </div>
-
+        <div class="grid-item">
+            <div class="title">
+                <h2>LUCY</h2>
+            </div>
+            <img src="images/Lucy-2003.jpg" alt="">
+        </div>
+        
         <div class="grid-item">            
             <div class="title">
                 <h2>ABSTRACTED TERMS</h2>
@@ -72,6 +79,13 @@
         
         <div class="grid-item">
             <div class="title">
+                <h2>XRAY OF MY INSPIRATION</h2>
+            </div>
+            <img src="images/Xray of my inspiration-2007.JPG" alt="">
+        </div>
+        
+        <div class="grid-item">
+            <div class="title">
                 <h2>LADY</h2>
             </div>
             <img src="images/lady-2009.JPG" alt="">
@@ -84,12 +98,6 @@
             <img src="images/Love=Paradise-2013.JPG" alt="">
         </div>
         
-        <div class="grid-item">
-            <div class="title">
-                <h2>LUCY</h2>
-            </div>
-            <img src="images/Lucy-2003.jpg" alt="">
-        </div>
         
         <div class="grid-item">
             <div class="title">
@@ -174,12 +182,26 @@
             </div>
             <img src="images/She sells-2007.JPG" alt="">
         </div>
+
+        <div class="grid-item">
+            <div class="title">
+                <h2>ZZZzzzz...</h2>
+            </div>
+            <img src="images/ZZZzzzz...-2006.jpg" alt="">
+        </div>
         
         <div class="grid-item">
             <div class="title">
                 <h2>SUN GODDESS</h2>
             </div>
             <img src="images/Sun Goddess-2008.JPG" alt="">
+        </div>
+
+        <div class="grid-item">
+            <div class="title">
+                <h2>TRIPICAL TANGOS</h2>
+            </div>
+            <img src="images/Tripical tangos-2006.jpg" alt="">
         </div>
         
         <div class="grid-item">
@@ -217,12 +239,6 @@
             <img src="images/tree lady-2008.JPG" alt="">
         </div>
         
-        <div class="grid-item">
-            <div class="title">
-                <h2>TRIPICAL TANGOS</h2>
-            </div>
-            <img src="images/Tripical tangos-2006.jpg" alt="">
-        </div>
         
         <div class="grid-item">
             <div class="title">
@@ -238,24 +254,14 @@
             <img src="images/woman&lizard-2004.gif" alt="">
         </div>
         
-        <div class="grid-item">
-            <div class="title">
-                <h2>XRAY OF MY INSPIRATION</h2>
-            </div>
-            <img src="images/Xray of my inspiration-2007.JPG" alt="">
-        </div>
         
-        <div class="grid-item">
-            <div class="title">
-                <h2>ZZZzzzz...</h2>
-            </div>
-            <img src="images/ZZZzzzz...-2006.jpg" alt="">
-        </div>
+        
     </div>
 </div> 
 
 <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script>    
     var colc = new Colcade( '.grid', {
         columns: '.grid-col',
