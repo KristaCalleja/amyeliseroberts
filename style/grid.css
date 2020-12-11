@@ -1,6 +1,15 @@
-.container{
-    width: 90%;
+.wrapper{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     /* border: 1px red solid; */
+}
+.horizontal-line{
+    border: none;
+    height: 4px;
+    background: #F25757;
 }
 .grid-item img {
     width: 100%;
@@ -19,13 +28,12 @@
 }
 .title{
     position: absolute;
-    background: rgba(0,0,0,0.8);
-    color: white;
+    color: black;
     margin-top: 1em;
     opacity: 0;
     transform: translateX(-.5em);
     transition: all 1s;
-    will-change: opacity, transform;
+    will-change: opacity transform;
 }
 .title h2{
     margin: .2em .5em;
@@ -35,9 +43,13 @@
     opacity: 1;
     transform: translateX(0);
 }
+.grid-item:hover{
+    cursor: zoom-in;
+
+}
 
 @media(min-width: 768px){
-    .container{
+    .wrapper{
         width: 90%;
     }
     .grid-col--2{
