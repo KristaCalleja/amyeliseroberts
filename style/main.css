@@ -46,7 +46,7 @@ nav ul li a{
 .footer{
     width: 90%;
     max-width: 1200px;
-    padding: 70px;
+    padding: 50px;
     font-weight: 600;
     font-size: 12px;
 }
@@ -73,26 +73,28 @@ nav ul li a{
 
 /* ABOUT HTML */
 .about{
-    padding: 120px 80px;
     background-color: #FFE5D4;
     color: #5e5d5b;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5em;
-    border: 1px green solid;
+    padding: 150px 0;
 }
 .about p{
-    background: transparent;
+    background-color: #FFE5D4;
 }
-.about span{
-    text-decoration: underline;
-    margin-left: 70px;
+.container{
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .banner{
     background-size: cover;
     background-position: center;
-    padding: 410px 240px;
+    padding: 190px 0;
 }
 .banner h2{
     background: none;
@@ -103,58 +105,22 @@ nav ul li a{
     font-style: italic;
     line-height: 1.8em;
 }
-.about img{
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 8px 6px 15px -5px rgba(0,0,0,0.64);
-}
 
 /* Form */
-form {
-    padding: 70px;
-    display: flex;
-    flex-direction: row;
-    position: relative; 
+.contact{
+    margin: auto;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    min-height: 520px;
+    align-items: center;
+    line-height: 2em;
 }
-
-.input-fields {
+.contact img{
+    background-size: cover;
     width: 100%;
-    background: transparent;
 }
-
-input[type=text] {
-    box-sizing: border-box;
-    border: 1px solid;
-    border-color: hsl(0, 36%, 70%);
-    width: 100%;
-    outline-style: none;
-    border-radius: 25px;
-    padding: 10px;
-    padding-left: 30px;
-    font-size: 16px;
-}
-
-.btn {
-    position: absolute;
-    right: 0;
-    width: 70px;
-    height: 100%;
-    text-align: center;
-    padding: 6px;
-    color: white; 
-    font-size: 22px;
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    outline-style: none;
-    box-shadow: 0px 15px 31px 4px rgba(206, 151, 151, 0.7);
-}
-
-.btn h3:hover {
-    margin-left: 10px;
-}
-
 
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -165,4 +131,19 @@ input[type=text] {
     .portfolio .items img{
         height: 80%;
     }
+    .container{
+        width: 1170px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }    
 }
