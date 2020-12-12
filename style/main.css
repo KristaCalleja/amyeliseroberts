@@ -71,6 +71,11 @@ nav ul li a{
     padding: 12px 8px;
 }
 
+/* CTA */
+.grid-button{
+    text-align: center;
+    margin-bottom: 70px;
+}
 /* ABOUT HTML */
 .about{
     background-color: #FFE5D4;
@@ -124,6 +129,7 @@ button:hover span:after {
     right: 0;
 }
 .banner{
+    margin: 90px 0;
     background-size: cover;
     background-position: center;
     padding: 190px 0;
@@ -138,20 +144,54 @@ button:hover span:after {
     line-height: 1.8em;
 }
 
-/* Form */
-.contact{
-    margin: auto;
-    padding: 28px;
+/* Keywords */
+.row{
+    margin: 150px 0;
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
-    min-height: 520px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+/* Business-card */
+.business-card{
+    padding: 80px 260px;
+    background: #FFE5D4;
+}
+.contact{
+    overflow: hidden;
+    width: 88%;
+    height: 420px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    display: flex;
     align-items: center;
-    line-height: 2em;
+}
+.contact-ref{
+    height: 100%;
+    width: 100%;
+    background: #EFEFEF;
 }
 .contact img{
-    background-size: cover;
-    width: 100%;
+    height: 100%;
+    width: 280px;
+    object-fit: cover;
+}
+.contact-ref h2{
+    padding: 50px 0;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+.contact-ref p{
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+} 
+.contact .contact-ref{
+    padding: 32px;
+    background: #EFEFEF;
 }
 
 
