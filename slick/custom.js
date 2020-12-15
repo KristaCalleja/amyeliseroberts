@@ -16,32 +16,17 @@ $(function (){
         variableWidth: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 4
-                }
+                // breakpoint: 1024,
+                // settings: {
+                //   'unslick'
+                // }
               },
               {
-                breakpoint: 600,
+                breakpoint: 575,
                 settings: {
-                  unslicked: true,
-                  adaptiveHeight: false,
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: false,
-                  speed: 300
+                  'unslick'
                 }
               },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  infinite: false,
-                  speed: 300
-                }
-              }
         ]
     });
 });
