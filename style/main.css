@@ -50,22 +50,14 @@ nav ul li a{
 /* Footer */
 .footer{
     width: 90%;
-    max-width: 1200px;
     padding: 50px;
     font-weight: 600;
     font-size: 12px;
 }
 
-
 /* Portfolio */
-.portfolio{
-    display:flex;
-    /* border: 2px black solid; */
-}
 .items{
-    /* height: 60%; */
-    margin:20px;
-    /* border: 2px red solid; */
+    margin: 20px;
 }
 .portfolio .items img{
     background-size: cover;
@@ -74,26 +66,13 @@ nav ul li a{
 .items .title{
     padding: 12px 8px;
 }
-.slick-dots {
-    text-align: center;
-}
-.slick-dots li{
-    display: inline-block;
-}
-.slick-dots button {
-    border-radius: 50%;
-    background:white;
-    color: white;
 
-}
-.slick-dots button :active{
-    background: #EFEFEF;
-}
 /* CTA */
 .grid-button{
     text-align: center;
-    margin: 70px 0;
+    padding: 30px 0;
 }
+
 /* ABOUT HTML */
 .about{
     background-color: #FFE5D4;
