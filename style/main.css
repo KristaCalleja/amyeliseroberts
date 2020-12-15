@@ -101,6 +101,7 @@ button{
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+
 }
 button span{
     cursor: pointer;
@@ -108,7 +109,7 @@ button span{
     position: relative;
     transition: 0.5s;
 }
-button span:after {
+button span:after {    
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -125,6 +126,7 @@ button:hover span:after {
     opacity: 1;
     right: 0;
 }
+/* Profile picture */
 .banner{
     margin: 90px 0;
     background-size: cover;
