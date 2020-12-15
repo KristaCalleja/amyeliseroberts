@@ -46,15 +46,6 @@ nav ul li :hover{
 nav ul li a{
     color: black;
 }
-
-/* Footer */
-.footer{
-    width: 90%;
-    padding: 50px;
-    font-weight: 600;
-    font-size: 12px;
-}
-
 /* Portfolio */
 .items{
     margin: 20px;
@@ -169,16 +160,15 @@ button:hover span:after {
 }
 .contact-ref h2{
     padding: 50px 0;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
 .contact-ref p{
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.8;
     opacity: .7;
-    margin-bottom: 0;
-    margin-top: 8px;
+    margin: 20px 70px;
 } 
 .contact .contact-ref{
     padding: 32px;

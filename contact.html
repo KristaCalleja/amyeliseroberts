@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Official Artist Website of Amy Elise Roberts</title>
+    <title>CONTACT | The Official Artist Website of Amy Elise Roberts</title>
     <link rel="stylesheet" href="style/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Lora:ital@1&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <!-- Navigation bar -->
@@ -17,10 +17,10 @@
 <!-- Business card -->
 <div class="business-card">
     <div class="container">
-    <div class="contact" id="contact">
+    <div class="contact">
         <img src="images/samplephoto.png" alt="">
         <div class="contact-ref">
-            <h2>Let's talk...</h2>
+            <h2>Send me your thoughts and questions</h2>
             <p>Phone: +1 (xx) XX-XXX-XXXXX
                 <br>Email: AMY800@GMAIL.COM
             </p>
@@ -41,7 +41,12 @@
         $("#nav-placeholder").load("assets/nav.html");
         });
     </script>
+    <script>
+        $(function(){
+        $("#footer-placeholder").load("assets/footer.html");
+        });
+    </script>
 <hr class="horizontal-line">
-<div class="footer">    
-    © AMY ELISE ROBERTS 2020. ALL RIGHTS RESERVED.
+<div id="footer-placeholder">
 </div>
+</html>
