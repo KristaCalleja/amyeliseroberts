@@ -13,20 +13,6 @@ $(function (){
         autoplay: true,
         autoplaySpeed: 1000,
         verticalSwiping: false,        
-        variableWidth: true,
-        responsive: [
-            {
-                // breakpoint: 1024,
-                // settings: {
-                //   'unslick'
-                // }
-              },
-              {
-                breakpoint: 575,
-                settings: {
-                  'unslick'
-                }
-              },
-        ]
+        variableWidth: true 
     });
 });
