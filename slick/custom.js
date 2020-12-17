@@ -13,6 +13,6 @@ $(function (){
         autoplay: true,
         autoplaySpeed: 1000,
         verticalSwiping: false,        
-        variableWidth: true 
+        variableWidth: true
     });
 });
