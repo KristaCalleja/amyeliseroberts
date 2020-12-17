@@ -61,6 +61,12 @@ nav ul li a{
 }
 
 /* Portfolio */
+.portfolio .items{
+    height:720px;
+}
+.portfolio .items img{
+    height: 80%;
+}
 .items{
     margin: 20px;
 }
@@ -179,10 +185,10 @@ button:hover span:after {
     margin: 0;
 }
 .contact-ref p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.8;
     opacity: .7;
-    margin: 20px 70px;
+    margin: 10px 20px;
 } 
 .contact .contact-ref{
     padding: 32px;
@@ -192,12 +198,7 @@ button:hover span:after {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .portfolio .items{
-        height:720px;
-    }
-    .portfolio .items img{
-        height: 80%;
-    }
+    
     .container{
         width: 1170px;
     }
@@ -206,6 +207,12 @@ button:hover span:after {
 @media (min-width: 768px){
     .container{
         width: 750px;
+    }
+}
+
+@media{min-width: 992px}{
+    .container{
+        width: 970px;
     }
 }
 
