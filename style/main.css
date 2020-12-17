@@ -148,12 +148,11 @@ button:hover span:after {
 
 /* Business-card */
 .business-card{
-    padding: 80px 260px;
+    padding: 60px 120px;
     background: #FFE5D4;
 }
 .contact{
     overflow: hidden;
-    width: 88%;
     height: 420px;
     background: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.6);
@@ -193,24 +192,23 @@ button:hover span:after {
     .container{
         width: 1170px;
     }
+    .contact{
+        max-width: 900px;
+        margin: 0 300px;
+    }
 }
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .container{
         width: 750px;
     }
-}
-@media(min-width: 992px){
+} */
+/* @media(min-width: 992px){
     .container{
         width: 970px;
     }
-}
+} */
 /* Mobile responsive all elements */
 @media (max-width: 1096px){
-    label.logo{
-        font-size: 32px;
-        padding-left: 10px;
-        line-height: 40px;
-    }
     nav ul li a{
         font-size: 8px;
     }
@@ -224,7 +222,7 @@ button:hover span:after {
         background: #F25757;
         top: 80px;
         left: -100%;
-        text-align: left;
+        text-align: center;
         transition: all .5s;
     }
     nav ul li{
@@ -244,11 +242,24 @@ button:hover span:after {
     }
 }
 
-@media (min-width: 100px) and (max-width: 575px){
+@media (min-width: 100px) and (max-width: 736px){
     label.logo{
         font-size: 21px;
         padding-left: 10px;
         line-height: 80px;
+    }
+    .business-card{
+        padding: 60px 20px;
+        background: #FFE5D4;
+    }
+    .contact img{
+        width: 160px;
+    }
+    .contact-ref h2{
+        font-size: 16px;
+    }
+    .contact-ref p{
+        font-size: 12px;
     }
 }
 
