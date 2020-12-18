@@ -200,7 +200,7 @@ button:hover span:after {
 /* Mobile responsive all elements */
 @media (max-width: 1096px){
     .portfolio{
-        transform: translateZ(50%);
+        /* transform: translateZ(50%); */
     }
     .slick-track{
         position: fixed;
@@ -220,6 +220,7 @@ button:hover span:after {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 99;
     }
     nav ul li{
         display: block;
