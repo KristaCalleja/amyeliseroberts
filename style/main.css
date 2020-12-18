@@ -61,6 +61,7 @@ nav ul li a{
     display: none;
 }
 /* Portfolio */
+
 .portfolio .items{
     height: 720px;
     margin: 20px;
@@ -197,18 +198,14 @@ button:hover span:after {
         margin: 0 300px;
     }
 }
-/* @media (min-width: 768px){
-    .container{
-        width: 750px;
-    }
-} */
-/* @media(min-width: 992px){
-    .container{
-        width: 970px;
-    }
-} */
 /* Mobile responsive all elements */
 @media (max-width: 1096px){
+    .portfolio{
+        transform: translateZ(50%);
+    }
+    .slick-track{
+        position: fixed;
+    }
     nav ul li a{
         font-size: 8px;
     }
@@ -229,7 +226,7 @@ button:hover span:after {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-      }
+    }
     nav ul li a{
         font-size: 20px;
     }
@@ -238,7 +235,7 @@ button:hover span:after {
         color: #48233C;
     }
     #check:checked ~ ul{
-       left: 0;
+        left: 0;
     }
 }
 
