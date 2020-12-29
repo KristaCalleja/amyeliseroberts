@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "colcade": "^0.2.0",
+    "lightbox2": "^2.11.3",
     "slick-carousel": "^1.8.1"
   }
 }
