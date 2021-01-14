@@ -148,16 +148,32 @@ button:hover span:after {
 
 /* Business-card */
 .business-card{
-    padding: 60px 120px;
+    padding: 60px;
     background: #FFE5D4;
 }
 .contact{
+    border: 1px olive solid;
     overflow: hidden;
-    height: 420px;
-    background: white;
+    height: 620px;
     box-shadow: 0 0 15px rgba(0,0,0,0.6);
     display: flex;
     align-items: center;
+}
+input{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    line-height: 2em;
+    border: 2px steelblue solid;    
+}
+#textarea{
+    border: 2px #F25757 solid;
+    border-radius: 3px;
+    padding: 20px;
+}
+input:focus, textarea:focus
+{
+    outline: none;
 }
 .contact-ref{
     height: 100%;
