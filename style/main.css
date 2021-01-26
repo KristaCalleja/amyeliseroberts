@@ -190,27 +190,28 @@ button{
 .contact-ref{
     height: 100%;
     background: #EFEFEF;;
-    padding: 60px;
+    padding: 50px;
 }
 .contact img{
     height: 100%;
     width: 280px;
     object-fit: cover;
 }
-.contact-ref h2{
-    padding: 50px 0;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-}
 .contact-ref p{
     font-size: 16px;
     line-height: 1.8;
     opacity: .7;
-    margin: 10px;
+    margin: 35px;
 } 
 
-
+#wa-button{
+    margin: 30px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #29b200;
+    color: #EFEFEF;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
 
 /* Re-create Bootstrap container */
 @media (min-width: 1200px) {    
